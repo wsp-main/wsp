@@ -1,0 +1,5 @@
+cd path/to/your/repository
+echo "web-service-planning.com" > CNAME
+git add CNAME
+git commit -m "Add CNAME file for custom domain"
+git push origin main
