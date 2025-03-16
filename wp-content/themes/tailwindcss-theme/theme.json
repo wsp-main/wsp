@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "1080px",
+      "wideSize": "1440px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#1B1B1B"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#424242"
+        },
+        {
+          "name": "Therd",
+          "slug": "therd",
+          "color": "#C2C1C1"
+        },
+        {
+          "name": "font1",
+          "slug": "font1",
+          "color": "#C41D00"
+        },
+        {
+          "name": "font2",
+          "slug": "font2",
+          "color": "#3D2784"
+        },
+        {
+          "name": "clr1",
+          "slug": "clr1",
+          "color": "#c4420a"
+        },
+        {
+          "name": "clr2",
+          "slug": "clr2",
+          "color": "#F1F1F1"
+        },
+        {
+          "name": "clr3",
+          "slug": "clr3",
+          "color": "#0F6B15"
+        },
+        {
+          "name": "hclr1",
+          "slug": "hclr1",
+          "color": "#A299C0"
+        },
+        {
+          "name": "clr4",
+          "slug": "clr4",
+          "color": "#E1D9C5"
+        },
+        {
+          "name": "clr5",
+          "slug": "clr5",
+          "color": "#8B8888"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "XX-small",
+          "slug": "xx-small",
+          "size": "0.6rem"
+        },
+        {
+          "name": "X-small",
+          "slug": "x-small",
+          "size": "0.85rem"
+        },
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "1rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.2rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "2rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "3rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "5rem"
+        }
+      ]
+    }
+  }
+}

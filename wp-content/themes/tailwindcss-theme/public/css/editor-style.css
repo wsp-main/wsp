@@ -1,0 +1,20 @@
+body {
+
+ font-family: "游ゴシック体", YuGothic, "メイリオ", Meiryo, sans-serif /* Tailwindのフォントスタイルを適用 */
+}
+
+.wp-block {
+
+ max-width: 1280px /* Tailwindの幅設定を適用 */
+}
+
+.wp-block[data-align=wide] {
+
+ max-width: 1280px
+}
+
+.wp-block[data-align=full] {
+
+ max-width: 100%
+}
+

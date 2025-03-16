@@ -1,0 +1,208 @@
+
+body {
+    font-family:'"游ゴシック体"', 'YuGothic', '"メイリオ"', 'Meiryo', 'sans-serif';
+}
+
+p,div,table,li,dt,dd,a {
+  font-size:1.2rem;
+}
+
+/*****************　下向き(直角三角形左寄り)　*****************/
+.triangle-right-left {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid #1B1B1B; /* ブラウザ幅いっぱいの長さ */
+  border-bottom: 600px solid transparent; /* 縦の高さ */
+}
+
+/*****************　下向き矢印（中央）　*****************/
+.triangle-wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #fff; /* 背景色を設定 */
+}
+.triangle-down-center{
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #1B1B1B;
+}
+
+.triangle-down-center2{
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #3D2784;
+}
+
+@media (max-width: 768px) {
+  .triangle-down-center{
+    border-top: 30px solid #1B1B1B;
+  }
+  .triangle-down-center2{
+    border-top: 30px solid #3D2784;
+  }
+
+}
+
+
+/*****************　下向き矢印（横幅いっぱい）　*****************/
+.triangle-wrapper2 {
+  margin: 0;
+  background-color: #f1f1f1; /* 背景色を設定 */
+  width: 100%;
+}
+
+
+.triangle-down-center-full-width {
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 160px solid #1B1B1B; /* 任意の高さ */
+}
+@media (max-width: 768px) {
+  .triangle-down-center-full-width {
+    border-top: 50px solid #1B1B1B; /* 任意の高さ */
+  }
+}
+  /*****************　リストの右向き三角アイコン　*****************/
+
+  .list-icon1 {
+    display: flex;
+    align-items: center;
+}
+
+.list-icon1::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #3D2784;
+    margin-right: 10px; /* テキストとの間隔 */
+}
+
+.with-vertical-bar {
+  position: relative;
+  padding-left: 1rem; /* テキストと縦線の間のスペース */
+}
+
+  /*****************　テキスト左側に縦のバーを追加　*****************/
+.with-vertical-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px; /* 縦線の幅 */
+  background-color: #000; /* 縦線の色 */
+}
+
+  /*****************　テキストの最初にアイコン表示　*****************/
+.img-icon2 {
+  position: relative;
+  padding-left: 24px; /* アイコンの幅＋余白 */
+}
+
+.img-icon2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* アイコンの幅 */
+  height: 50px; /* アイコンの高さ */
+  background-image: url('../images/nice_icon2.svg'); /* アイコンのパス */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .img-icon2 {
+    padding-left: 16px; /* アイコンの幅＋余白 */
+  }
+  
+  .img-icon2::before {
+    width: 30px; /* アイコンの幅 */
+    height: 30px; /* アイコンの高さ */
+
+  }
+
+}
+
+.img-icon3::before {
+  content: 'Q';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* アイコンの幅 */
+  height: 50px; /* アイコンの高さ */
+  font-size:xx-large;
+  color:#3D2784;
+}
+.img-icon4::before {
+  content: 'A';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* アイコンの幅 */
+  height: 50px; /* アイコンの高さ */
+  font-size:xx-large;
+  color:#C41D00;
+}
+
+#scrollToTop {
+  display: none; /* 初期状態でボタンを非表示に */
+}
+
+/*特定のタイミングで改行*/
+.breakpoint-line-break {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .breakpoint-line-break {
+    display: block;
+  }
+}
+
+.smf-action .smf-button-control__control {
+        font-size: 1.5rem;
+background:#3D2784 !important;
+background-image:linear-gradient(90deg, rgba(61,39,132,1) 0%, rgba(83,127,245,1) 95%) !important;
+color:white !important;
+font-weight:700 !important;
+border-radius: 9999px !important;
+border:4px white solid !important;
+width:100% !important;
+padding:20px 0 !important;
+margin:0 !important;
+display:flex !important;
+justify-content: center !important;
+align-items: center !important;
+transition-duration: 300ms !important;
+} 
+.smf-action .smf-button-control__control:hover {
+background:#A299C0 !important;
+border:4px white solid !important;
+}
+
+.smf-action .smf-button-control__control[data-action="back"]  {
+background:#C2C1C1 !important;
+}
+
+.smf-action .smf-button-control__control[data-action="back"]:hover  {
+background:#F1F1F1 !important;
+}
+
+.smf-select-control {
+width:100% !important;
+}

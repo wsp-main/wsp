@@ -1,0 +1,90 @@
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# ディレクトリブラウジングを無効化
+Options -Indexes
+
+# wp-config.phpへのアクセスをブロック
+<files wp-config.php>
+    order allow,deny
+    deny from all
+</files>
+
+# .htaccessへのアクセスをブロック
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>
+
+# XML-RPCを無効化
+<Files xmlrpc.php>
+    order deny,allow
+    deny from all
+</Files>
+
+# X-Content-Type-Optionsヘッダーを追加
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# X-Frame-Optionsヘッダーを追加
+<IfModule mod_headers.c>
+    Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
+
+# X-XSS-Protectionヘッダーを追加
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Gzip圧縮を有効化
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/xhtml+xml application/rss+xml application/atom+xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # 画像ファイルのキャッシュ有効期間を1年に設定
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # CSSファイルとJavaScriptファイルのキャッシュ有効期間を1ヶ月に設定
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # HTMLファイルのキャッシュ有効期間を1時間に設定
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # ブラウザキャッシュ用のキャッシュ制御ヘッダーを追加
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|woff|woff2|svg|eot|ttf)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+
+    # HTMLファイルはキャッシュさせず、常に最新の内容を取得
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, must-revalidate"
+    </FilesMatch>
+</IfModule>
