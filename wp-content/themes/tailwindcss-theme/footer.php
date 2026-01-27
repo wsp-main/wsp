@@ -2,7 +2,7 @@
 <footer class="fade-in-on-scroll">
 
 
-	<section class="py-20 bg-clr2">
+	<section class="py-20 bg-clr2 mt-20">
 		<h2 class=" container mx-auto font-bold text-large md:text-xxl text-center">ウェブサービスプランニングができる事</h2>
 		<div class=" container mx-auto flex items-center justify-center pt-20 md:pt-32">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">

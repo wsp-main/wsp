@@ -20,6 +20,46 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="flex items-center justify-center py-32">
+	<div class="grid gap-8 md:grid-cols-2">
+  <div class="bg-white shadow-md rounded-lg p-8">
+    <h3 class="text-orange-500 font-bold mb-4">1 情報発信</h3>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/t_about.svg" alt="情報発信のイメージ" class="mb-6">
+    <p class="text-gray-700 text-sm">
+      胆道閉鎖症に関する啓発を目的として、ホームページやSNSからの情報発信を行っています。
+    </p>
+  </div>
+  <div class="bg-white shadow-md rounded-lg p-8">
+    <h3 class="text-orange-500 font-bold mb-4">2 ピアサポート</h3>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/t_about.svg" alt="ピアサポートのイメージ" class="mb-6">
+    <p class="text-gray-700 text-sm">
+      胆道閉鎖症に関わる患者や保護者への寄り添い支援として、同じ病気を経験する仲間同士でのサポートを行います。
+    </p>
+  </div>
+  <div class="bg-white shadow-md rounded-lg p-8">
+    <h3 class="text-orange-500 font-bold mb-4">3 イベント活動</h3>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/t_about.svg" alt="イベント活動のイメージ" class="mb-6">
+    <p class="text-gray-700 text-sm">
+      胆道閉鎖症に関するイベントの企画を行っています。
+    </p>
+  </div>
+  <div class="bg-white shadow-md rounded-lg p-8">
+    <h3 class="text-orange-500 font-bold mb-4">4 スキル支援</h3>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/t_about.svg" alt="スキル支援のイメージ" class="mb-6">
+    <p class="text-gray-700 text-sm">
+      Webに関するスキル支援を行っています。胆道閉鎖症を患う当事者の方は低価格で講座を受講することができます。
+    </p>
+  </div>
+</div>
+	</div>
+
+
+
+
+
+
+
 	<div class="flex items-center justify-center">
 		<div class="grid grid-cols-1 md:grid-cols-3 w-full">
 			<div class="text-center hover:bg-therd transition-colors text-primary hover:text-white">

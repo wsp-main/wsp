@@ -188,7 +188,7 @@
             </div>
         <?php else : ?>
             <div class="bg-primary md:pb-0">
-                <div class="bg-[url('../img/mv_top_sp.svg')] bg-contain bg-no-repeat bg-bottom w-full flex flex-col justify-center pt-28 md:pt-40 pb-40">
+                <div class="bg-[url('../img/mv_top_sp.svg')] bg-contain lg:bg-cover bg-no-repeat bg-bottom w-full flex flex-col justify-center md:pt-40 pt-28 pb-40">
                         <?php
                         // アイコンリストのデータ（内容を必要に応じて変更）
                         $icon_list = [
